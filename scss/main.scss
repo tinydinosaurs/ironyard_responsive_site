@@ -1,27 +1,2 @@
-$body_text: #8a8a8a;
-$headers: #fff;
-$borders: #ddd;
-$pricing_bg: #f7f7f7;
-$personal: #519251;
-$sm_business: #2c4985;
+@import '_colors.scss';
 
-
-
-body {
-	color: $body_text;
-}
-
-h1, h2 {color: $headers;}
-
-ul {
-	background-color: #666;
-	
-	li {
-		font-weight: bold;
-		&:first-child {
-			background-color: pink;
-		}
-	}
-}
-
-h3 {color: $body_text;}
