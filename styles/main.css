@@ -1,3 +1,130 @@
+/* some variables because I'm too lazy to make another import file */
+/********************************************
+			MOBILE FIRST LAYOUT				
+********************************************/
+/*base styles */
+body {
+  max-width: 767px;
+  margin: 10px auto;
+  color: #526066;
+  text-align: center; }
 
+h1 {
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 1.15em; }
+
+h2, h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400; }
+
+footer {
+  background-color: #111;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em; }
+  footer a {
+    color: #fff; }
+
+/* top navigation styles */
+header:first-child {
+  margin-top: 1em; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.top_nav {
+  text-align: left; }
+  .top_nav a {
+    text-decoration: none;
+    color: #526066; }
+  .top_nav a:hover {
+    color: #111; }
+  .top_nav span {
+    text-transform: uppercase;
+    color: #444; }
+  .top_nav li {
+    display: inline;
+    margin: 0 2% 0 6%; }
+
+/* hero section styles */
+.hero {
+  background: url("../img/tree.jpg");
+  padding: 4em 0;
+  margin: 0.5em; }
+  .hero h1 {
+    margin: 0; }
+
+/* pricing section styles */
+.pricing {
+  margin: 2.625em 1em; }
+  .pricing header {
+    color: #fff;
+    padding: 2.15em;
+    margin: 0; }
+
+.plans {
+  border: 1px solid #ddd;
+  margin-bottom: 1.875em; }
+  .plans h2 {
+    letter-spacing: 0.25em;
+    margin: 0; }
+  .plans h3 {
+    font-size: 1.25em;
+    opacity: 0.5;
+    margin: 0; }
+  .plans li {
+    background-color: #f7f7f7;
+    padding: 0.85em 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em; }
+  .plans footer {
+    padding: 1.5em;
+    background-color: #fff;
+    margin: 0; }
+
+.personal > header {
+  background-color: #519251; }
+
+.small_business > header {
+  background-color: #2c4985; }
+
+.enterprise > header {
+  background-color: #111; }
+
+.huge {
+  font-size: 6em;
+  font-weight: 200;
+  margin: 0; }
+
+button {
+  color: #111;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  border-radius: 50px; }
+
+/* details section styles */
+.details {
+  margin-top: 7em; }
+
+.detail_block {
+  margin: 2.5em;
+  text-align: left; }
+  .detail_block h2 {
+    color: #111;
+    font-weight: 400;
+    font-size: 1.15em;
+    letter-spacing: 0.25em; }
+  .detail_block p {
+    line-height: 1.6em; }
+
+/* footer styles */
+footer p {
+  line-height: 1.6em; }
 
 /*# sourceMappingURL=main.css.map */

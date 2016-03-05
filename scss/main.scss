@@ -1,2 +1,187 @@
-@import '_colors.scss';
+@import '_colors';
+@import 'mixins';
+
+/* some variables because I'm too lazy to make another import file */
+$upper: uppercase; 
+
+
+/********************************************
+			MOBILE FIRST LAYOUT				
+********************************************/
+
+/*base styles */
+
+body {
+	max-width: 767px; 
+	margin: 10px auto;
+	color: $body_text;
+	text-align: center;
+}
+
+h1 {
+	color: $headers;
+	font-weight: 400;
+	text-shadow: 1px 1px 1px #000;
+	line-height: 1.15em;
+}
+
+
+h2, h3 {
+	text-transform: $upper;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+footer {
+	background-color: $contrast_dark;
+	padding: 0.5em 1.5em;
+	margin: 0 0.5em;
+
+	a {
+		color: #fff;
+	}
+}
+
+/* top navigation styles */
+
+header:first-child {margin-top: 1em;}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top_nav {
+	text-align: left;
+
+	a {
+		text-decoration: none; 
+		color: $body_text;
+	}
+
+	a:hover {color: $contrast_dark;}
+
+	span {
+		text-transform: $upper;
+		color: $logo_text;
+	}
+
+	li {
+		display: inline;
+		margin: 0 2% 0 6%;
+	}
+}
+
+/* hero section styles */
+
+.hero {
+	background: url('../img/tree.jpg');
+	padding: 4em 0;
+	margin: 0.5em;
+
+	h1 {
+		margin: 0;
+	}
+}
+
+/* pricing section styles */
+
+.pricing {
+	margin: 2.625em 1em;
+
+	header {
+		color: $headers;
+		padding: 2.15em;
+		margin: 0;
+
+	}
+}
+
+.plans {
+	border: 1px solid $borders;
+	margin-bottom: 1.875em;
+
+	h2 {
+		letter-spacing: 0.25em;
+		margin: 0;
+	}
+
+	h3 {
+		font-size: 1.25em;
+		opacity: 0.5;
+		margin: 0;
+	}
+
+	li {
+		background-color: $pricing_bg;
+		padding: 0.85em 0;
+		border-bottom: 1px solid $borders;
+		font-size: 0.95em;
+	}
+
+	footer {
+		padding: 1.5em;
+		background-color: #fff;
+		margin: 0;
+	}
+}
+
+.personal > header {
+	background-color: $personal;
+}
+
+.small_business > header {
+	background-color: $small_business;
+}
+
+.enterprise > header {
+	background-color: $enterprise;
+}
+
+.huge {
+	font-size: 6em;
+	font-weight: 200;
+	margin: 0;
+}
+
+button {
+	color: $contrast_dark;
+	background-color: #fff;
+	font-weight: 700;
+	padding: 0.5em 1em;
+	border: 1px solid $borders;
+	border-radius: 50px;
+}
+
+/* details section styles */
+
+.details {
+	margin-top: 7em;
+}
+
+.detail_block {
+
+	margin: 2.5em;
+	text-align: left;
+
+	h2 {
+		color: $contrast_dark;
+		font-weight: 400;
+		font-size: 1.15em;
+		letter-spacing: 0.25em;
+	}
+
+	p {
+		line-height: 1.6em;
+	}
+}
+
+/* footer styles */
+
+footer p {
+	line-height: 1.6em;
+}
+
+
 
