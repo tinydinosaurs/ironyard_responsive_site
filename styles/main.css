@@ -26,7 +26,8 @@ h2, h3 {
 footer {
   background-color: #111;
   padding: 0.5em 3em;
-  margin: 0 0.5em; }
+  margin: 0 0.5em;
+  color: #999; }
   footer a {
     color: #fff; }
 
@@ -141,7 +142,7 @@ footer p {
 /********************************************
 			  SECOND BREAKPOINT				
 ********************************************/
-@media all and (min-width: 768px) and (max-width: 978px) {
+@media all and (min-width: 768px) {
   /* grid system styles for pricing and details sections */
   [class*='col-'] {
     float: left; }
@@ -153,6 +154,9 @@ footer p {
   .col-3:last-child {
     margin-right: 0; }
 
+  .details {
+    margin-top: 0; }
+
   .detail_block {
     margin: 2em 0; }
 
@@ -161,7 +165,21 @@ footer p {
     width: 40%;
     margin: 0 5%; }
 
-  .details, .credit {
+  .pricing:after,
+  .details:after {
+    content: "";
+    display: table;
     clear: both; } }
+/********************************************
+			  THIRD BREAKPOINT				
+********************************************/
+@media all and (min-width: 979px) {
+  /* extra margins for larger viewports */
+  .pricing {
+    margin: 2.625em 12% 2em 12%; }
+
+  .details {
+    margin-left: 8em;
+    margin-right: 8em; } }
 
 /*# sourceMappingURL=main.css.map */

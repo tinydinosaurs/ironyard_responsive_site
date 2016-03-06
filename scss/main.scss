@@ -40,7 +40,7 @@ footer {
 	background-color: $contrast_dark;
 	padding: 0.5em 3em;
 	margin: 0 0.5em;
-
+	color: #999;
 	a {
 		color: #fff;
 	}
@@ -209,7 +209,7 @@ footer p {
 			  SECOND BREAKPOINT				
 ********************************************/
 
-@media all and (min-width: 768px) and (max-width: 978px) {
+@media all and (min-width: 768px) {
 	
 	/* grid system styles for pricing and details sections */
 
@@ -225,6 +225,10 @@ footer p {
 
 	.col-3:last-child {margin-right: 0}
 
+	.details {
+		margin-top: 0;
+	}
+
 	.detail_block {margin: 2em 0;}
 
 	.col-4 {
@@ -233,8 +237,32 @@ footer p {
 		margin: 0 5%;
 	}
 
-	.details, .credit {
+	.pricing:after,
+	.details:after {
+		content: "";
+		display: table;
 		clear: both;
+	}
+
+
+}
+
+
+/********************************************
+			  THIRD BREAKPOINT				
+********************************************/
+
+@media all and (min-width: 979px) {
+	
+/* extra margins for larger viewports */
+	
+	.pricing {
+		margin: 2.625em 12% 2em 12%;
+	}
+
+	.details {
+		margin-left: 8em;
+		margin-right: 8em;
 	}
 
 }
