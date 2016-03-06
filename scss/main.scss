@@ -11,9 +11,13 @@ $upper: uppercase;
 
 /*base styles */
 
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
 body {
-	max-width: 767px; 
-	margin: 10px auto;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0 auto;
 	color: $body_text;
 	text-align: center;
 }
@@ -83,6 +87,7 @@ ul {
 	h1 {
 		margin: 0;
 	}
+
 }
 
 /* pricing section styles */
@@ -92,7 +97,7 @@ ul {
 
 	header {
 		color: $headers;
-		padding: 2.15em;
+		padding: 2.15em 0;
 		margin: 0;
 
 	}
@@ -184,10 +189,10 @@ footer p {
 }
 
 /********************************************
-			FIRST BREAKPOINT				
+			  FIRST BREAKPOINT				
 ********************************************/
 
-@media all and (min-width: 479px) and (max-width: 767px) {
+@media all and (min-width: 479px) {
 
 	.hero {
 		padding: 9em 0;
@@ -199,3 +204,37 @@ footer p {
 
 }
 
+
+/********************************************
+			  SECOND BREAKPOINT				
+********************************************/
+
+@media all and (min-width: 768px) and (max-width: 978px) {
+	
+	/* grid system styles for pricing and details sections */
+
+	
+	[class*='col-'] {
+  		float: left;
+	}
+
+	.col-3 {
+		width: 32%;
+		margin-right: 2%;
+	}
+
+	.col-3:last-child {margin-right: 0}
+
+	.detail_block {margin: 2em 0;}
+
+	.col-4 {
+		float: left;
+		width: 40%;
+		margin: 0 5%;
+	}
+
+	.details, .credit {
+		clear: both;
+	}
+
+}

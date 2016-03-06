@@ -3,9 +3,12 @@
 			MOBILE FIRST LAYOUT				
 ********************************************/
 /*base styles */
+*, *:after, *:before {
+  box-sizing: border-box; }
+
 body {
-  max-width: 767px;
-  margin: 10px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
   color: #526066;
   text-align: center; }
 
@@ -63,7 +66,7 @@ ul {
   margin: 2.625em 1em; }
   .pricing header {
     color: #fff;
-    padding: 2.15em;
+    padding: 2.15em 0;
     margin: 0; }
 
 .plans {
@@ -128,12 +131,37 @@ footer p {
   line-height: 1.6em; }
 
 /********************************************
-			FIRST BREAKPOINT				
+			  FIRST BREAKPOINT				
 ********************************************/
-@media all and (min-width: 479px) and (max-width: 767px) {
+@media all and (min-width: 479px) {
   .hero {
     padding: 9em 0; }
     .hero h1 {
       font-size: 3em; } }
+/********************************************
+			  SECOND BREAKPOINT				
+********************************************/
+@media all and (min-width: 768px) and (max-width: 978px) {
+  /* grid system styles for pricing and details sections */
+  [class*='col-'] {
+    float: left; }
+
+  .col-3 {
+    width: 32%;
+    margin-right: 2%; }
+
+  .col-3:last-child {
+    margin-right: 0; }
+
+  .detail_block {
+    margin: 2em 0; }
+
+  .col-4 {
+    float: left;
+    width: 40%;
+    margin: 0 5%; }
+
+  .details, .credit {
+    clear: both; } }
 
 /*# sourceMappingURL=main.css.map */
