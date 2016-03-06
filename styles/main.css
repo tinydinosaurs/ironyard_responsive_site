@@ -12,7 +12,7 @@ body {
 h1 {
   color: #fff;
   font-weight: 400;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   line-height: 1.15em; }
 
 h2, h3 {
@@ -22,7 +22,7 @@ h2, h3 {
 
 footer {
   background-color: #111;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 3em;
   margin: 0 0.5em; }
   footer a {
     color: #fff; }
@@ -48,7 +48,7 @@ ul {
     color: #444; }
   .top_nav li {
     display: inline;
-    margin: 0 2% 0 6%; }
+    margin: 0 1.7% 0 5%; }
 
 /* hero section styles */
 .hero {
@@ -126,5 +126,14 @@ button {
 /* footer styles */
 footer p {
   line-height: 1.6em; }
+
+/********************************************
+			FIRST BREAKPOINT				
+********************************************/
+@media all and (min-width: 479px) and (max-width: 767px) {
+  .hero {
+    padding: 9em 0; }
+    .hero h1 {
+      font-size: 3em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -21,7 +21,7 @@ body {
 h1 {
 	color: $headers;
 	font-weight: 400;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 	line-height: 1.15em;
 }
 
@@ -34,7 +34,7 @@ h2, h3 {
 
 footer {
 	background-color: $contrast_dark;
-	padding: 0.5em 1.5em;
+	padding: 0.5em 3em;
 	margin: 0 0.5em;
 
 	a {
@@ -69,7 +69,7 @@ ul {
 
 	li {
 		display: inline;
-		margin: 0 2% 0 6%;
+		margin: 0 1.7% 0 5%;
 	}
 }
 
@@ -183,5 +183,19 @@ footer p {
 	line-height: 1.6em;
 }
 
+/********************************************
+			FIRST BREAKPOINT				
+********************************************/
 
+@media all and (min-width: 479px) and (max-width: 767px) {
+
+	.hero {
+		padding: 9em 0;
+
+		h1 {
+			font-size: 3em;
+		}
+	}
+
+}
 
